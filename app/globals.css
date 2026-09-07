@@ -13,6 +13,10 @@
   --color-blue: #7FA6FF;
   --color-violet: #B388FF;
   --color-green: #6FA98C;
+
+  --font-display: var(--font-orbitron), "Orbitron", sans-serif;
+  --font-body: var(--font-inter), "Inter", sans-serif;
+  --font-mono: var(--font-jetbrains), "JetBrains Mono", monospace;
 }
 
 @media (prefers-color-scheme: dark) {
