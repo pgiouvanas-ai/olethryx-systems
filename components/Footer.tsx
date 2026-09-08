@@ -8,7 +8,7 @@ export default function Footer() {
                 {/* Logo + Title */}
                 <div className="flex flex-row items-center gap-4">
                     <Image
-                      src="logo.png"
+                      src="/logo.png"
                       alt="Olethryx AI Systems"
                       width={28}
                       height={28}
