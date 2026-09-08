@@ -4,9 +4,9 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
 export default function Footer() {
     return (
         <footer className="bg-ink border-t border-panel-line pt-10 pb-6">
-            <div className="w-[92%] max-w-\[1140px\] mx-auto grid grid-cols-1 md:grid-cols-[3fr_2fr_1fr] gap-10 items-start">
+            <div className="px-6 grid grid-cols-1 md:grid-cols-[3fr_2fr_1fr] gap-10 items-start">
                 {/* Logo + Title */}
-                <div className="flex flex-row items-center gap-4">
+                <div className="flex flex-row items-center gap-2.5">
                     <Image
                       src="/logo.png"
                       alt="Olethryx AI Systems"
