@@ -1,6 +1,6 @@
 //defines each project card
 
-type Project = {
+export type Project = {
     name: string;
     logo: string;
     status: "LIVE" | "IN DEV";
