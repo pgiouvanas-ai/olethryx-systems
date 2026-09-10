@@ -23,7 +23,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       {/* logo, name, status badge */}
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2.5">
-          <img src={project.logo} alt="" className="h-7 w-7 shrink-0" />
+          <img src={project.logo} alt="" className="h-13 w-auto shrink-0" />
           <span className="font-display text-lg text-bone">{project.name}</span>
         </div>
         <span
