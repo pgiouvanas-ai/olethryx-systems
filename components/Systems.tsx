@@ -14,7 +14,7 @@ const projects: Project[] = [
   },
   {
     name: "Retro Routes Dublin",
-    logo: "/retro-logo.png",
+    logo: "/retro_logo.jpg",
     status: "LIVE",
     role: "Sole Developer — Design, Frontend, Backend, Deployment",
     industry: "TODO: industry",
