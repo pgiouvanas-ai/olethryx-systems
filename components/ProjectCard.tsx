@@ -14,7 +14,7 @@ type ProjectCardProps = {
   project: Project;
 };
 
-// card component, renders a project into a card
+// card rendering projects
 export default function ProjectCard({ project }: ProjectCardProps) {
   const isLive = project.status === "LIVE";
 
@@ -39,14 +39,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       {/* role */}
       <p className="font-mono text-xs text-panel-line mb-4">{project.role}</p>
 
-      {/* industry, as a tag */}
+      {/* industry*/}
       <div className="flex flex-wrap gap-2 mb-4">
         <span className="rounded-full px-3 py-1 border border-panel-line font-mono text-[11px] text-bone">
           {project.industry}
         </span>
       </div>
 
-      {/* tech stack, one tag per item */}
+      {/* tech stack */}
       <div className="flex flex-wrap gap-2 mb-4">
         {project.stack.map((tech) => (
           <span
@@ -61,7 +61,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       {/* short description */}
       <p className="text-sm text-bone mb-6">{project.description}</p>
 
-      {/* opens the modal, not yet built */}
+      {/* modal button */}
       <button className="inline-flex items-center gap-2 px-4 py-2 border border-blue text-blue font-mono text-xs tracking-widest hover:bg-blue hover:text-ink transition-colors duration-200">
         VIEW DETAILS →
       </button>
