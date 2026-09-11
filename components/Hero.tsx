@@ -13,7 +13,11 @@ export default function Hero() {
             />
             <div className="relative z-10 max-w-xl">
                 <h1 className="font-display sm:text-8xl text-bone mb-4">
-                    Creative Destruction
+                    Creative
+                    <br />
+                    <span className="bg-linear-to-r from-blue to-violet bg-clip-text text-transparent">
+                        Destruction
+                    </span>
                 </h1>
                 <p className="font-body text-lg sm:text-1xl text-bone">
                     A new way to create intelligent software systems.
