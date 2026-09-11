@@ -8,7 +8,7 @@ const projects: Project[] = [
     logo: "/gaia-logo.png",
     status: "IN DEV",
     role: "Founder / Full-Stack Developer",
-    industry: "TODO: industry",
+    industry: "Agritech",
     stack: ["Next.js", "TypeScript", "FastAPI", "Supabase", "Claude API"],
     description: "TODO: one-line description",
   },
@@ -22,7 +22,7 @@ const projects: Project[] = [
     description: "TODO: one-line description",
   },
   {
-    name: "Olethryx",
+    name: "Olethryx AI Systems",
     logo: "/logo.png",
     status: "IN DEV",
     role: "Founder / Full-Stack Developer",
