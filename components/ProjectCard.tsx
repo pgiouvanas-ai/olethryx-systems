@@ -4,7 +4,7 @@ export type Project = {
   logo: string;
   status: "LIVE" | "IN DEV";
   role: string;
-  industry: string;
+  industry: string[];
   stack: string[];
   description: string;
 };
@@ -41,9 +41,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
       {/* industry*/}
       <div className="flex flex-wrap gap-2 mb-4">
-        <span className="rounded-full px-3 py-1 border border-panel-line font-mono text-[11px] text-bone">
-          {project.industry}
+        {project.industry.map((tech) => (
+         <span 
+           key={tech}
+           className="rounded-full px-3 py-1 border border-panel-line font-mono text-[11px] text-bone">  
+          {tech} 
         </span>
+        ))}
       </div>
 
       {/* tech stack */}
