@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
     return (
-        <section className="relative min-h-screen overflow-hidden">
+        <section className="relative min-h-screen overflow-hidden flex items-center px-6 pt-24">
             <Image
               src="/olethryx-hero.png"
               alt="Fractured obsidian monolith glowing with electric blue and violet light."
