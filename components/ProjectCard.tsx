@@ -28,10 +28,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </div>
         <span
           className={`inline-flex items-center gap-1.5 px-2 py-0.5 border font-mono text-[11px] tracking-wider ${
-            isLive ? "border-blue text-blue" : "border-panel-line text-panel-line"
+            isLive ? "border-violet text-violet" : "border-blue text-blue"
           }`}
         >
-          <span className={`w-1.5 h-1.5 rounded-full ${isLive ? "bg-blue" : "bg-panel-line"}`} />
+          <span className={`w-1.5 h-1.5 rounded-full ${isLive ? "bg-violet" : "bg-blue"}`} />
           {project.status}
         </span>
       </div>
