@@ -11,11 +11,11 @@ export default function Hero() {
               sizes="100vw"
               className="object-cover"
             />
-            <div className="relative z-10 max-w-x1">
-                <h1 className="font-display text-4x1 sm:text-5x1 test-bone mb-4">
+            <div className="relative z-10 max-w-xl">
+                <h1 className="font-display sm:text-8xl text-bone mb-4">
                     Creative Destruction
                 </h1>
-                <p className="font-body text-1g text-bone">
+                <p className="font-body text-lg sm:text-1xl text-bone">
                     A new way to create intelligent software systems.
                 </p>
             </div>
