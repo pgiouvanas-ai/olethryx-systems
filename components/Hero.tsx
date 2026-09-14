@@ -20,7 +20,7 @@ export default function Hero() {
                     </span>
                 </h1>
                 <p className="font-body text-lg sm:text-1xl text-bone">
-                    A new way to create intelligent software systems.
+                    The best way to create intelligent software systems.
                 </p>
             </div>
 
