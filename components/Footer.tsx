@@ -38,6 +38,13 @@ export default function Footer() {
             </a>
           </div>
         </div>
+        {/* Legal */}
+        <div className="flex flex-col gap-4 text-left">
+          <h4 className="text-[13px] font-bold text-blue tracking-widest[0.1em] uppercase m-0">Legal</h4>
+          <a href="/en/privacy" className="text-[14px] text-bone no-underline hover:text-blue transition-colors duration-200">Privacy Policy</a>
+          <a href="/en/terms" className="text-[14px] text-bone no-underline hover:text-blue transition-colors duration-200">Terms & Conditions</a>
+          <a href="/en/cookies" className="text-[14px] text-bone no-underline hover:text-blue transition-colors duration-200">Cookie Policy</a>
+        </div>
             </div>
             <hr className="border-t border-panel-line w-4/5 mx-auto my-8" />
             <p className="text-[13px] text-bone text-center mt-8">
