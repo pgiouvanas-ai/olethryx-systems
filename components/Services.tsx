@@ -4,9 +4,9 @@ import type { Service } from "@/components/ServiceCard";
 // The three services offered
 const services: Service[] = [
   {
-    name: "Product development",
+    name: "AI engineering and development",
     stack: ["TODO: stack"],
-    description: "Scoping an idea into a real, buildable product before a line of code gets written.",
+    description: "Building AI directly into real systems, from intelligent features to automated workflows.",
   },
   {
     name: "Software engineering and development",
@@ -14,10 +14,12 @@ const services: Service[] = [
     description: "Full-stack web apps and platforms, built end to end with a layered architecture.",
   },
   {
-    name: "AI engineering and development",
+    name: "Product development",
     stack: ["TODO: stack"],
-    description: "Building AI directly into real systems, from intelligent features to automated workflows.",
+    description: "Scoping an idea into a real, buildable product before a line of code gets written.",
   },
+  
+  
 ];
 
 export default function Services() {
