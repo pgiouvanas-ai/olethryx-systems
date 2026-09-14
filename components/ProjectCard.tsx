@@ -3,7 +3,6 @@ export type Project = {
   name: string;
   logo: string;
   status: "LIVE" | "IN DEV";
-  role: string;
   industry: string[];
   stack: string[];
   description: string;
