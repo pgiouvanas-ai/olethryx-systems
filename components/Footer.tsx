@@ -19,6 +19,10 @@ export default function Footer() {
                     </span>
                 </div>
             </div>
+            <hr className="border-t border-panel-line w-4/5 mx-auto my-8" />
+            <p className="text-[13px] text-bone text-center mt-8">
+             © {new Date().getFullYear()} Olethryx AI Systems. All rights reserved.
+            </p>
         </footer>
     );
 }
