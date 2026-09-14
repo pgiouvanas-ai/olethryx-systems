@@ -44,7 +44,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         {project.industry.map((tech) => (
          <span 
            key={tech}
-           className="rounded-full px-3 py-1 border border-panel-line font-mono text-[11px] text-bone">  
+           className="rounded-full px-3 py-1 border border-green font-mono text-[11px] text-green">  
           {tech} 
         </span>
         ))}
@@ -55,7 +55,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         {project.stack.map((tech) => (
           <span
             key={tech}
-            className="rounded-full px-3 py-1 border border-panel-line font-mono text-[11px] text-bone"
+            className="rounded-full px-3 py-1 border border-violet font-mono text-[11px] text-violet"
           >
             {tech}
           </span>
