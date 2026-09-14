@@ -9,7 +9,7 @@ const projects: Project[] = [
     status: "IN DEV",
     industry: ["Agritech", "AI", "Sustainability"],
     stack: ["Next.js", "TypeScript", "FastAPI", "Supabase", "Claude API"],
-    description: "TODO: one-line description",
+    description: "An Intelligent, multilayered agritech system transforming the way we farm.",
   },
   {
     name: "Retro Routes Dublin",
@@ -17,7 +17,7 @@ const projects: Project[] = [
     status: "LIVE",
     industry: ["Tourism", "AI", "Travel"],
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Resend"],
-    description: "TODO: one-line description",
+    description: "An AI-powered travel platform connecting tourists with Dublin's vintage scene and culture.",
   },
   {
     name: "Olethryx AI Systems",
@@ -25,7 +25,7 @@ const projects: Project[] = [
     status: "IN DEV",
     industry: ["Software", "AI", "Engineering"],
     stack: ["Next.js", "TypeScript", "Tailwind CSS"],
-    description: "TODO: one-line description",
+    description: "An AI-powered portfolio showcasing intelligent software solutions for real-world applications.",
   },
 ];
 
