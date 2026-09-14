@@ -36,9 +36,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </span>
       </div>
 
-      {/* role */}
-      <p className="font-mono text-xs text-panel-line mb-4">{project.role}</p>
-
       {/* industry*/}
       <div className="flex flex-wrap gap-2 mb-4">
         {project.industry.map((tech) => (
