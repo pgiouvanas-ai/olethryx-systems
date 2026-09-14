@@ -13,7 +13,7 @@ const projects: Project[] = [
   },
   {
     name: "Retro Routes Dublin",
-    logo: "/retro_logo.jpg",
+    logo: "/retro_logo_new.png",
     status: "LIVE",
     industry: ["Tourism", "AI", "Travel"],
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Resend"],
