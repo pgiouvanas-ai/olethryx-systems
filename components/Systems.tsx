@@ -34,7 +34,7 @@ const projects: Project[] = [
 
 export default function Systems() {
   return (
-    <section className="bg-ink px-6 py-24">
+    <section id="systems" className="bg-ink px-6 py-24">
       <h2 className="font-display text-2xl text-bone mb-12">Systems</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {projects.map((project) => (

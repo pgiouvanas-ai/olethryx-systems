@@ -24,7 +24,7 @@ const services: Service[] = [
 
 export default function Services() {
   return (
-    <section className="bg-ink px-6 py-24">
+    <section id="services" className="bg-ink px-6 py-24">
       <h2 className="font-display text-2xl text-bone mb-12">Services</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {services.map((service) => (

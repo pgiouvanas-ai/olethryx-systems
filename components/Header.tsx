@@ -10,6 +10,17 @@ export default function Header() {
                   OLETHRYX AI SYSTEMS
                 </span>
             </div>
+            <div className="flex items-center gap-6">
+             <a href="#about" className="font-mono text-xs tracking-widest text-bone hover:text-blue transition-colors duration-200">
+             ABOUT
+             </a>
+             <a href="#systems" className="font-mono text-xs tracking-widest text-bone hover:text-blue transition-colors duration-200">
+             SYSTEMS
+             </a>
+             <a href="#services" className="font-mono text-xs tracking-widest text-bone hover:text-blue transition-colors duration-200">
+             SERVICES
+             </a>
+            </div>
         </nav>
     );
 }
