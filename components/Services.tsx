@@ -4,19 +4,20 @@ import type { Service } from "@/components/ServiceCard";
 // The three services offered
 const services: Service[] = [
   {
-    name: "AI engineering and development",
-    stack: ["TODO: stack"],
-    description: "Building AI directly into real systems, from intelligent features to automated workflows.",
+    name: "Software engineering & development",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Python", "FastAPI", "Supabase", "Vercel", "CI/CD", "Resend"],
+    description: "Building full-stack applications and platforms from architecture through deployment.",
   },
   {
-    name: "Software engineering and development",
-    stack: ["TODO: stack"],
-    description: "Full-stack web apps and platforms, built end to end with a layered architecture.",
+    name: "AI engineering & development",
+    stack: ["Python", "FastAPI"],
+    description: "Building intelligent software and integrating AI into existing systems.",
   },
+  
   {
     name: "Product development",
-    stack: ["TODO: stack"],
-    description: "Scoping an idea into a real, buildable product before a line of code gets written.",
+    stack: ["Notion", "ChatGPT", "Claude"],
+    description: "Bring us your idea or a real-world problem, and we'll turn it into the right product solution.",
   },
   
   
