@@ -13,12 +13,13 @@ type ServiceCardProps = {
 // card rendering services
 export default function ServiceCard({ service }: ServiceCardProps) {
   return (
-    <div className="border border-panel-line bg-panel p-6">
+    <div className="border border-panel-line bg-panel p-6 flex flex-col h-full">
       {/* title */}
       <span className="font-display text-lg text-bone">{service.name}</span>
 
       {/* tech stack */}
-      <div className="flex flex-wrap gap-2 mt-4 mb-4">
+      <div className="min-h-19 mb-4">
+      <div className="flex flex-wrap gap-2 mt-4">
         {service.stack.map((tech) => (
           <span
             key={tech}
@@ -28,12 +29,13 @@ export default function ServiceCard({ service }: ServiceCardProps) {
           </span>
         ))}
       </div>
+      </div>
 
       {/* short description */}
       <p className="text-sm text-bone mb-6">{service.description}</p>
 
       {/* modal button */}
-      <button className="inline-flex items-center gap-2 px-4 py-2 border border-blue text-blue font-mono text-xs tracking-widest hover:bg-blue hover:text-ink transition-colors duration-200">
+      <button className="mt-auto self-start inline-flex items-center gap-2 px-4 py-2 border border-blue text-blue font-mono text-xs tracking-widest hover:bg-blue hover:text-ink transition-colors duration-200">
         VIEW DETAILS →
       </button>
     </div>
