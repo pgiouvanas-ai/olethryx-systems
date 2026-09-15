@@ -4,19 +4,13 @@ export default function About() {
           <div>
             <h2 className="font-display text-2xl text-bone mb-6">What we are</h2>
             <p className="font-body text-base text-bone leading-relaxed max-w-2xl">
-              Olethryx AI Systems is a software studio building AI-powered
-              products, automation tools, and web platforms for startups and
-              growing businesses. We work with businesses that need reliable
-              software built from the ground up, as well as founders who have an
-              idea they want to turn into a real product and business. We look
-              at the full picture from the beginning, including the product, the
-              technology, the data, the users, and the business model, so
-              everything has a clear purpose. We take the time to understand the
-              problem before we start building, work out how the system should
-              function, and bring AI into the parts where it can genuinely make
-              a difference. The goal is simple: build useful software that works
-              well, grows with the business, and holds up when real people start
-              using it.
+              Olethryx AI Systems is the software engineering portfolio of Panagiotis Giouvanas (Panos), focused on full-stack software development, AI engineering and product development.
+              <br />
+              <br />
+              I build intelligent software systems, full-stack web applications and AI-powered products with focus on scalable architecture.
+              <br />
+              <br />
+              Whether you&apos;re looking to build a new product, improve an existing system, or collaborate on something ambitious, I&apos;m always open to a conversation. I&apos;d love to hear from founders and businesses with a project in mind, as well as developers, designers and other intelligent software focused professionals interested in working together.
             </p>
           </div>
         </section>
