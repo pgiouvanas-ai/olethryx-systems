@@ -1,4 +1,10 @@
+"use client";
+
+import { useState } from "react";
+import ContactModal from "@/components/ContactModal";
+
 export default function About() {
+  const [showContact, setShowContact] = useState(false);
     return (
         <section id="about" className="bg-ink px-6 py-20 ">
           <div>
@@ -12,10 +18,13 @@ export default function About() {
               <br />
               Whether you&apos;re looking to build a new product, improve an existing system, or collaborate on something ambitious, I&apos;m always open to a conversation. I&apos;d love to hear from founders and businesses with a project in mind, as well as developers, designers and other intelligent software focused professionals interested in working together.
             </p>
-            <button className="mt-6 inline-flex items-center gap-2 px-4 py-2 border border-blue text-blue font-mono text-xs tracking-widest hover:bg-blue hover:text-ink transition-colors duration-200">
+            <button 
+            onClick={() => setShowContact(true)}
+            className="mt-6 inline-flex items-center gap-2 px-4 py-2 border border-blue text-blue font-mono text-xs tracking-widest hover:bg-blue hover:text-ink transition-colors duration-200">
               REQUEST A MEETING →
             </button>
           </div>
+          {showContact && <ContactModal onClose={() => setShowContact(false) } />}
         </section>
     )
 }
