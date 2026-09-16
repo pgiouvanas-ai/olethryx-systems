@@ -11,10 +11,11 @@ export type Project = {
 // card loads with project
 type ProjectCardProps = {
   project: Project;
+  onViewDetails: () => void;
 };
 
 // card rendering projects
-export default function ProjectCard({ project }: ProjectCardProps) {
+export default function ProjectCard({ project, onViewDetails }: ProjectCardProps) {
   const isLive = project.status === "LIVE";
 
   return (
@@ -62,7 +63,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <p className="text-sm text-bone mb-6">{project.description}</p>
 
       {/* modal button */}
-      <button className="inline-flex items-center gap-2 px-4 py-2 border border-blue text-blue font-mono text-xs tracking-widest hover:bg-blue hover:text-ink transition-colors duration-200">
+      <button onClick={onViewDetails} className="inline-flex items-center gap-2 px-4 py-2 border border-blue text-blue font-mono text-xs tracking-widest hover:bg-blue hover:text-ink transition-colors duration-200">
         VIEW DETAILS →
       </button>
     </div>
