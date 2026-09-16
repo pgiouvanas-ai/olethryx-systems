@@ -12,6 +12,9 @@ export default function About() {
               <br />
               Whether you&apos;re looking to build a new product, improve an existing system, or collaborate on something ambitious, I&apos;m always open to a conversation. I&apos;d love to hear from founders and businesses with a project in mind, as well as developers, designers and other intelligent software focused professionals interested in working together.
             </p>
+            <button className="mt-6 inline-flex items-center gap-2 px-4 py-2 border border-blue text-blue font-mono text-xs tracking-widest hover:bg-blue hover:text-ink transition-colors duration-200">
+              REQUEST A MEETING →
+            </button>
           </div>
         </section>
     )
