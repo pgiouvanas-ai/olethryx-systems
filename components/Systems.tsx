@@ -51,7 +51,7 @@ const projects: ProjectDetail[] = [
     logo: "/logo.png",
     status: "IN DEV",
     industry: ["Portfolio", "AI", "Engineering"],
-    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Resend"],
     description: "An AI-powered portfolio showcasing intelligent software solutions for real-world applications.",
     detailedDescription: "",
     products: [],

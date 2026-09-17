@@ -9,12 +9,12 @@ import ContactModal from "@/components/ContactModal";
 const services: Service[] = [
   {
     name: "Software engineering & development",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Python", "FastAPI", "Supabase", "Vercel", "CI/CD", "Resend"],
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Python", "FastAPI", "PostgreSQL", "Supabase", "CI/CD", "Vercel", "Resend"],
     description: "Building full-stack applications and platforms from architecture through deployment.",
   },
   {
     name: "AI engineering & development",
-    stack: ["Python", "FastAPI"],
+    stack: ["Python", "FastAPI", "LLMs", "RAG", "AI Agents"],
     description: "Building intelligent software and integrating AI into existing systems.",
   },
   
