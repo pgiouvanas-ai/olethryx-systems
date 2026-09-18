@@ -41,7 +41,7 @@ export default function Footer() {
         {/* Legal */}
         <div className="flex flex-col gap-4 text-left">
           <h4 className="text-[13px] font-bold text-blue tracking-widest[0.1em] uppercase m-0">Legal</h4>
-          <a href="/en/privacy" className="text-[14px] text-bone no-underline hover:text-blue transition-colors duration-200">Privacy Policy</a>
+          <a href="/privacy" className="text-[14px] text-bone no-underline hover:text-blue transition-colors duration-200">Privacy Policy</a>
           <a href="/en/terms" className="text-[14px] text-bone no-underline hover:text-blue transition-colors duration-200">Terms & Conditions</a>
           <a href="/en/cookies" className="text-[14px] text-bone no-underline hover:text-blue transition-colors duration-200">Cookie Policy</a>
         </div>
