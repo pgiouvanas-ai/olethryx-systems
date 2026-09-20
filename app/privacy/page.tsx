@@ -13,7 +13,7 @@ export default function PrivacyPage() {
     <>
       <Header />
       <main className="bg-ink min-h-screen pt-24 pb-16 px-6">
-        <div className="max-w-[800px] mx-auto">
+        <div className="max-w-200 mx-auto">
           <Link href="/" className="text-blue text-sm no-underline hover:underline">
             ← Back to home
           </Link>
