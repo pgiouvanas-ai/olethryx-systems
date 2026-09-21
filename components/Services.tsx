@@ -1,9 +1,6 @@
-"use client";
-import { useState } from "react";
 import ServiceCard from "@/components/ServiceCard";
-import ServiceModal from "@/components/ServiceModal";
 import type { Service } from "@/components/ServiceCard";
-import ContactModal from "@/components/ContactModal";
+
 
 // The three services offered
 const services: Service[] = [
@@ -28,28 +25,14 @@ const services: Service[] = [
 ];
 
 export default function Services() {
-  const [selectedService, setSelectedService] = useState<Service | null>(null);
-  const [showContact, setShowContact] = useState(false);
   return (
     <section id="services" className="bg-ink px-6 py-24">
       <h2 className="font-display text-2xl text-bone mb-12">Services</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {services.map((service) => (
-          <ServiceCard 
-          key={service.name} 
-          service={service} 
-          onViewDetails={() => setSelectedService(service)}
-          />
+          <ServiceCard key={service.name} service={service} />
         ))}
       </div>
-      {selectedService && (
-        <ServiceModal
-          service={selectedService}
-          onClose={() => setSelectedService(null)}
-          onContactClick={() => setShowContact(true)}
-        />
-      )}
-      {showContact && <ContactModal onClose={() => setShowContact(false)} />}
     </section>
   );
 }
