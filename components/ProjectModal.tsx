@@ -13,7 +13,6 @@ type ProjectDetail = {
   name: string;
   logo: string;
   status: "LIVE" | "IN DEV";
-  detailedDescription: string;
   problem: string;
   solution: string;
   howItWasCreated: string;
@@ -59,9 +58,6 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           <img src={project.logo} alt="" className="h-9 w-auto shrink-0" />
           <span className="font-display text-xl text-bone">{project.name}</span>
         </div>
-
-        {/* Detailed description */}
-        <p className="text-sm text-bone mb-6">{project.detailedDescription}</p>
 
         {/* Problem */}
         <h3 className="font-mono text-xs text-blue uppercase tracking-wider mb-2">Problem</h3>
