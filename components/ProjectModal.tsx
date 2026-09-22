@@ -14,11 +14,9 @@ type ProjectDetail = {
   logo: string;
   status: "LIVE" | "IN DEV";
   detailedDescription: string;
-  products: ModalProduct[];
   problem: string;
   solution: string;
   howItWasCreated: string;
-  futurePlans: string;
 };
 
 type ProjectModalProps = {
@@ -65,16 +63,6 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         {/* Detailed description */}
         <p className="text-sm text-bone mb-6">{project.detailedDescription}</p>
 
-        {/* Products */}
-        <h3 className="font-mono text-xs text-blue uppercase tracking-wider mb-2">Products</h3>
-        <div className="flex flex-wrap gap-2 mb-6">
-          {project.products.map((p) => (
-            <span key={p.name} className="rounded-full px-3 py-1 border border-panel-line font-mono text-[11px] text-bone">
-              {p.name} — {p.status}
-            </span>
-          ))}
-        </div>
-
         {/* Problem */}
         <h3 className="font-mono text-xs text-blue uppercase tracking-wider mb-2">Problem</h3>
         <p className="text-sm text-bone mb-6">{project.problem}</p>
@@ -87,9 +75,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         <h3 className="font-mono text-xs text-blue uppercase tracking-wider mb-2">How it was created</h3>
         <p className="text-sm text-bone mb-6">{project.howItWasCreated}</p>
 
-        {/* Future plans */}
-        <h3 className="font-mono text-xs text-blue uppercase tracking-wider mb-2">Future plans</h3>
-        <p className="text-sm text-bone">{project.futurePlans}</p>
+        
       </div>
     </div>
   );
