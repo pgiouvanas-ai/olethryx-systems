@@ -30,7 +30,7 @@ const projects: ProjectDetail[] = [
     industry: ["Tourism", "AI", "Culture"],
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Resend"],
     description: "An AI-powered travel platform connecting tourists with Dublin's vintage scene and culture.",
-    problem: "Gaia was created to enhance traditional farming methods with technology, data and AI. The aim is to help farms improve the quality of what they produce while using their resources more sustainably and keeping the business financially viable. Farmers will be able to receive recommendations tailored to their own farm, helping them understand where they can use fewer resources, improve their farming practices and reduce unnecessary costs. The goal is to support the farmer rather than replace the knowledge and experience that comes from traditional farming. By making sustainable farming more practical and viable, Gaia aims to support a better quality of life for farmers in the countryside while helping consumers have access to fresher, higher quality and healthier products.",
+    problem: "",
     solution: "",
     howItWasCreated: "",
   },
