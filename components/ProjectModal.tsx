@@ -55,7 +55,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
 
         {/* Header */}
         <div className="flex items-center gap-2.5 mb-6">
-          <img src={project.logo} alt="" className="h-9 w-auto shrink-0" />
+          <img src={project.logo} alt={`${project.name} logo`} className="h-9 w-auto shrink-0" />
           <span className="font-display text-xl text-bone">{project.name}</span>
         </div>
 
