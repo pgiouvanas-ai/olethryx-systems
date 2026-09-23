@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Orbitron, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import CookieConsent from "@/components/CookieConsent";
 
 const orbitron = Orbitron({
   variable: "--font-orbitron",
@@ -30,7 +31,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${orbitron.variable} ${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-ink text-bone">{children}</body>
+      <body className="min-h-full flex flex-col bg-ink text-bone">
+        {children}
+        <CookieConsent />
+        </body>
     </html>
   );
 }
