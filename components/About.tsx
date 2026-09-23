@@ -16,7 +16,7 @@ export default function About() {
               I build intelligent software systems, full-stack web applications and AI-powered products with focus on scalable architecture.
               <br />
               <br />
-              Whether you&apos;re looking to build a new product, improve an existing system, or collaborate on something ambitious, I&apos;m always open to a conversation. I&apos;d love to hear from founders and businesses with a project in mind, as well as developers, designers and other intelligent software focused professionals interested in working together.
+              Whether you&apos;re looking to build a new product, improve an existing system, or collaborate on something ambitious, I&apos;m always open to a conversation. I&apos;d love to hear from founders and businesses with a project in mind, as well as developers, designers and other AI and software focused professionals interested in working together.
             </p>
             <button 
             onClick={() => setShowContact(true)}
