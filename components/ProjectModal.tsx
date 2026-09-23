@@ -48,7 +48,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
       >
         <button
           onClick={onClose}
-          className="text-panel-line hover:text-bone transition-colors duration-200 mb-6 font-mono text-sm"
+          className="text-bone hover:text-blue transition-colors duration-200 mb-6 font-mono text-sm"
         >
           × CLOSE
         </button>
