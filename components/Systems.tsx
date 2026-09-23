@@ -41,9 +41,9 @@ const projects: ProjectDetail[] = [
     industry: ["Portfolio", "AI", "Engineering"],
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Resend"],
     description: "An AI-powered portfolio showcasing intelligent software solutions for real-world applications.",
-    problem: "",
-    solution: "",
-    build: "",
+    problem: "Olethryx started with a simple idea: create a place where I could bring my software projects, services and ideas together and give them room to grow. I wanted the platform to represent the work I am building today while creating a foundation for the studio I want to build in the future.",
+    solution: "Olethryx is being developed in three stages. The first stage is the website, bringing my projects, services and software engineering work together in one place and giving each system its own story. The second stage will introduce an AI chat that can help clients and collaborators explore the studio, understand the services and find the right way for us to work together. As the studio grows, Olethryx will bring clients and collaborators together around new projects and ideas. The third stage will turn that experience into a smart client and studio platform. Clients will have their own space where they can follow their projects, see progress and interact with the work, while collaborators can work alongside the studio in the same environment.",
+    build: "Olethryx is being built with Next.js, TypeScript and Tailwind CSS using a component based structure. The first stage is being developed from the ground up as a real software project, with reusable components and structured project data that make the platform easy to expand. The foundation is being designed with the future stages in mind, giving the AI experience and client platform a natural place to grow within the same system.",
   },
 ];
 
