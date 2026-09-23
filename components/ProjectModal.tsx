@@ -15,7 +15,7 @@ type ProjectDetail = {
   status: "LIVE" | "IN DEV";
   problem: string;
   solution: string;
-  howItWasCreated: string;
+  build: string;
 };
 
 type ProjectModalProps = {
@@ -68,8 +68,8 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         <p className="text-sm text-bone mb-6">{project.solution}</p>
 
         {/* How it was created */}
-        <h3 className="font-mono text-xs text-blue uppercase tracking-wider mb-2">How it was created</h3>
-        <p className="text-sm text-bone mb-6">{project.howItWasCreated}</p>
+        <h3 className="font-mono text-xs text-blue uppercase tracking-wider mb-2">Build</h3>
+        <p className="text-sm text-bone mb-6">{project.build}</p>
 
         
       </div>
