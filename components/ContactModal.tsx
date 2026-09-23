@@ -43,7 +43,7 @@ export default function ContactModal({ onClose }: ContactModalProps) {
       >
         <button
           onClick={onClose}
-          className="text-panel-line hover:text-bone transition-colors duration-200 mb-6 font-mono text-sm"
+          className="text-bone hover:text-blue transition-colors duration-200 mb-6 font-mono text-sm"
         >
           × CLOSE
         </button>
@@ -77,7 +77,7 @@ export default function ContactModal({ onClose }: ContactModalProps) {
             placeholder="Full name"
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
-            className="bg-ink border border-panel-line text-bone font-mono text-sm px-3 py-2"
+            className="bg-ink border border-panel-line placeholder:text-bone font-mono text-sm px-3 py-2"
           />
           <input
             type="email"
@@ -85,14 +85,14 @@ export default function ContactModal({ onClose }: ContactModalProps) {
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="bg-ink border border-panel-line text-bone font-mono text-sm px-3 py-2"
+            className="bg-ink border border-panel-line placeholder:text-bone font-mono text-sm px-3 py-2"
           />
           <input
             type="tel"
             placeholder="Phone number"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            className="bg-ink border border-panel-line text-bone font-mono text-sm px-3 py-2"
+            className="bg-ink border border-panel-line placeholder:text-bone font-mono text-sm px-3 py-2"
           />
           <textarea
             required
@@ -100,7 +100,7 @@ export default function ContactModal({ onClose }: ContactModalProps) {
             placeholder="Message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="bg-ink border border-panel-line text-bone font-mono text-sm px-3 py-2"
+            className="bg-ink border border-panel-line placeholder:text-bone font-mono text-sm px-3 py-2"
           />
           <button
             type="submit"
