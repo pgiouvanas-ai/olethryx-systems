@@ -3,6 +3,7 @@ import { Orbitron, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import CookieConsent from "@/components/CookieConsent";
 
+// The three fonts that are used across the site.
 const orbitron = Orbitron({
   variable: "--font-orbitron",
   subsets: ["latin"],
@@ -19,12 +20,13 @@ const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
 });
 
-
+// Metadata used by search engines
 export const metadata: Metadata = {
-  title: "Olethyx AI Systems",
-  description: "Building user-focused intelligent systems. With Olethryx AI Systems, you get secure, full-stack AI-powered platforms, built end to end.",
+  title: "Olethryx AI Systems",
+  description: "Building user focused intelligent software systems and full stack applications. Combining software engineering, AI engineering and product development to turn ideas into working products.",
 };
 
+// Shared layout among every page in the application.
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
