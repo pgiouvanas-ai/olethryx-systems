@@ -2,13 +2,7 @@
 
 import { useEffect } from "react";
 
-// One product under a project (a project can have more than one)
-type ModalProduct = {
-  name: string;
-  status: "LIVE" | "IN DEV";
-};
-
-// Everything the modal needs to render one project's full case study
+// Modal render
 type ProjectDetail = {
   name: string;
   logo: string;
@@ -24,7 +18,7 @@ type ProjectModalProps = {
 };
 
 export default function ProjectModal({ project, onClose }: ProjectModalProps) {
-  // Close on Escape key, and lock page scroll while modal is open
+  // Closes the modal with escape key and prevents page from scrolling.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -67,7 +61,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         <h3 className="font-mono text-xs text-blue uppercase tracking-wider mb-2">Solution</h3>
         <p className="text-sm text-bone mb-6">{project.solution}</p>
 
-        {/* How it was created */}
+        {/* Build */}
         <h3 className="font-mono text-xs text-blue uppercase tracking-wider mb-2">Build</h3>
         <p className="text-sm text-bone mb-6">{project.build}</p>
 
