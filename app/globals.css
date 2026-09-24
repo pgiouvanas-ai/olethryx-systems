@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 
+/*  Colours and typography */
 @theme inline {
   --color-ink: #05070D;
   --color-panel: #0A0D16;
@@ -12,10 +13,10 @@
 
   --font-display: var(--font-orbitron), "Orbitron", sans-serif;
   --font-body: var(--font-inter), "Inter", sans-serif;
-  --font-mono: var(--font-jetbrains), "JetBrains Mono", monospace;
+  --font-mono: var(--font-jetbrains-mono), "JetBrains Mono", monospace;
 }
 
-
+/* Default styling for the whole page. */
 body {
   background: var(--color-ink);
   color: var(--color-bone);
