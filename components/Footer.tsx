@@ -28,11 +28,11 @@ export default function Footer() {
             <FaPhone className="text-blue text-[16px]" /> +353 87 630 5609
           </a>
           <div className="flex gap-3 mt-2">
-            <a href="https://github.com/pgiouvanas-ai" target="_blank" rel="noopener noreferrer"
+            <a href="https://github.com/pgiouvanas-ai" target="_blank" rel="noopener noreferrer" aria-label="Github"
               className="text-[24px] text-blue no-underline w-10 h-10 border border-blue rounded-full flex items-center justify-center hover:bg-blue transition-all duration-200 group">
               <FaGithub className="group-hover:text-ink" />
             </a>
-            <a href="https://www.linkedin.com/in/panagiotis-giouvanas/" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/in/panagiotis-giouvanas/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
               className="text-[24px] text-blue no-underline w-10 h-10 border border-blue rounded-full flex items-center justify-center hover:bg-blue transition-all duration-200 group">
               <FaLinkedin className="group-hover:text-ink" />
             </a>
