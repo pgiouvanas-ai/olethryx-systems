@@ -3,17 +3,19 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+// Metadata used by search engines.
 export const metadata: Metadata = {
   title: "Terms & Conditions | Olethryx AI Systems",
   description: "The terms that apply when you use the Olethryx AI Systems website or engage us for services.",
 };
 
+// Terms page.
 export default function TermsPage() {
   return (
     <>
       <Header />
       <main className="bg-ink min-h-screen pt-24 pb-16 px-6">
-        <div className="max-w-[800px] mx-auto">
+        <div className="max-w-200 mx-auto">
           <Link href="/" className="text-blue text-sm no-underline hover:underline">
             ← Back to home
           </Link>
