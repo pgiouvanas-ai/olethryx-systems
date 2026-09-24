@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer className="bg-ink border-t border-panel-line pt-10 pb-6">
             <div className="px-6 grid grid-cols-1 md:grid-cols-[3fr_2fr_1fr] gap-10 items-start">
-                {/* Logo + Title */}
+                {/* Logo and title */}
                 <div className="flex flex-row items-center gap-2.5">
                     <Image
                       src="/logo.png"
@@ -47,6 +47,7 @@ export default function Footer() {
         </div>
             </div>
             <hr className="border-t border-panel-line w-4/5 mx-auto my-8" />
+            // Shows the current year in the footer.
             <p className="text-[13px] text-bone text-center mt-8">
              © {new Date().getFullYear()} Olethryx AI Systems. All rights reserved.
             </p>
