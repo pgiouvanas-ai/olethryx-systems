@@ -3,17 +3,19 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+// Metadata for search engines
 export const metadata: Metadata = {
   title: "Cookie Policy | Olethryx AI Systems",
   description: "How Olethryx AI Systems uses cookies and similar technologies on this website.",
 };
 
+// Cookies policy
 export default function CookiesPage() {
   return (
     <>
       <Header />
       <main className="bg-ink min-h-screen pt-24 pb-16 px-6">
-        <div className="max-w-[800px] mx-auto">
+        <div className="max-w-200 mx-auto">
           <Link href="/" className="text-blue text-sm no-underline hover:underline">
             ← Back to home
           </Link>
