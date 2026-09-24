@@ -12,6 +12,7 @@ declare global {
 export default function CookieConsent() {
   const [visible, setVisible] = useState(false);
 
+  // Defines the Google Analytics consent settings.
   const updateGoogleConsent = (analyticsGranted: boolean) => {
     if (typeof window !== "undefined" && typeof window.gtag === "function") {
       window.gtag("consent", "update", {
@@ -23,6 +24,7 @@ export default function CookieConsent() {
     }
   };
 
+  // Checks if the visitor has chosen cookie preference.
   useEffect(() => {
     const choice = localStorage.getItem("cookie-consent");
 
@@ -33,6 +35,7 @@ export default function CookieConsent() {
     }
   }, []);
 
+  // Saves the visitor's choice and updates Google Analytics consent.
   const accept = () => {
     localStorage.setItem("cookie-consent", "accepted");
     updateGoogleConsent(true);
@@ -48,8 +51,8 @@ export default function CookieConsent() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-[200] bg-panel border-t border-panel-line px-6 py-5">
-      <div className="max-w-[1000px] mx-auto flex flex-col sm:flex-row items-center gap-4">
+    <div className="fixed bottom-0 left-0 right-0 z-200 bg-panel border-t border-panel-line px-6 py-5">
+      <div className="max-w-250 mx-auto flex flex-col sm:flex-row items-center gap-4">
         <p className="text-bone text-sm leading-relaxed flex-1">
           We use essential cookies to run this site and, with your consent, analytics cookies to understand how visitors use it. See our{" "}
           <Link href="/cookies" className="text-blue hover:underline">
