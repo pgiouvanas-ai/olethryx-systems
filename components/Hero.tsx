@@ -12,7 +12,7 @@ export default function Hero() {
               className="object-cover"
             />
             <div className="relative z-10 max-w-xl">
-                <h1 className="font-display sm:text-8xl text-bone mb-4">
+                <h1 className="font-display text-6xl sm:text-8xl text-bone mb-4">
                     Creative
                     <br />
                     <span className="bg-linear-to-r from-blue to-violet bg-clip-text text-transparent">
