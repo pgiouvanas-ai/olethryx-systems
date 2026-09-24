@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+// Hero image, title and subtitle
 export default function Hero() {
     return (
         <section className="relative min-h-screen overflow-hidden flex items-center px-6 pt-24">
