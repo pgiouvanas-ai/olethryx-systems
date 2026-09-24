@@ -59,7 +59,6 @@ export default function Systems() {
             key={project.name} 
             project={project}
             onViewDetails={() => {
-              console.log("VIEW DETAILS CLICKED", project.name);
                 setSelectedProject(project);
             }}
           />
