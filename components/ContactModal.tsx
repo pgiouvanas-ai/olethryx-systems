@@ -13,7 +13,7 @@ export default function ContactModal({ onClose }: ContactModalProps) {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
-  // Close on Escape key, and lock page scroll while modal is open
+  // the modal closes with escape and when open the page can't be scrolled.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -28,7 +28,6 @@ export default function ContactModal({ onClose }: ContactModalProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: connect to Resend
     console.log({ mode, fullName, email, phone, message });
   };
 
@@ -48,7 +47,7 @@ export default function ContactModal({ onClose }: ContactModalProps) {
           × CLOSE
         </button>
 
-        {/* Hire / Collaborate toggle */}
+        {/* Hire and Collaborate toggle in the request a meeting form */}
         <div className="flex gap-2 mb-6">
           <button
             type="button"
