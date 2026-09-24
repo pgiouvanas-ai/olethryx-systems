@@ -2,7 +2,7 @@ import ServiceCard from "@/components/ServiceCard";
 import type { Service } from "@/components/ServiceCard";
 
 
-// The three services offered
+// Services content
 const services: Service[] = [
   {
     name: "Software engineering & development",
