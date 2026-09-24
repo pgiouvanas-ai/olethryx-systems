@@ -20,7 +20,7 @@ export default function Footer() {
                 </div>
                 {/* Find Us */}
                 <div className="flex flex-col gap-4 text-left">
-          <h4 id="find-us" className="text-[13px] font-bold text-blue tracking-widest[0.1em] uppercase m-0">Find Us</h4>
+          <h3 id="find-us" className="text-[13px] font-bold text-blue tracking-widest[0.1em] uppercase m-0">Find Us</h3>
           <a href="mailto:panagiotisgiouvanas@gmail.com" target="_blank" rel="noopener noreferrer" className="text-[14px] text-cream no-underline flex items-center gap-2">
             <FaEnvelope className="text-blue text-[16px]" /> panagiotisgiouvanas@gmail.com
           </a>
@@ -40,7 +40,7 @@ export default function Footer() {
         </div>
         {/* Legal */}
         <div className="flex flex-col gap-4 text-left">
-          <h4 className="text-[13px] font-bold text-blue tracking-widest[0.1em] uppercase m-0">Legal</h4>
+          <h3 className="text-[13px] font-bold text-blue tracking-widest[0.1em] uppercase m-0">Legal</h3>
           <a href="/privacy" className="text-[14px] text-bone no-underline hover:text-blue transition-colors duration-200">Privacy Policy</a>
           <a href="/terms" className="text-[14px] text-bone no-underline hover:text-blue transition-colors duration-200">Terms & Conditions</a>
           <a href="/cookies" className="text-[14px] text-bone no-underline hover:text-blue transition-colors duration-200">Cookie Policy</a>
