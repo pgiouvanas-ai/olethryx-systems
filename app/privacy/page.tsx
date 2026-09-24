@@ -3,11 +3,13 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+// Metadata for search engines
 export const metadata: Metadata = {
   title: "Privacy Policy | Olethryx AI Systems",
   description: "How Olethryx AI Systems collects, uses and protects your personal data.",
 };
 
+// Privact policy page
 export default function PrivacyPage() {
   return (
     <>
