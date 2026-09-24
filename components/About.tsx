@@ -3,7 +3,9 @@
 import { useState } from "react";
 import ContactModal from "@/components/ContactModal";
 
+// About section and contact form.
 export default function About() {
+  // Tracking if the contact form is open.
   const [showContact, setShowContact] = useState(false);
     return (
         <section id="about" className="bg-ink px-6 py-20 ">
