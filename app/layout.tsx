@@ -24,6 +24,9 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Olethryx AI Systems",
   description: "Building user focused intelligent software systems and full stack applications. Combining software engineering, AI engineering and product development to turn ideas into working products.",
+  other: {
+    google: "notranslate",
+  },
 };
 
 // Shared layout among every page in the application.
