@@ -6,8 +6,8 @@ import type { Service } from "@/components/ServiceCard";
 const services: Service[] = [
   {
     name: "Software engineering & development",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Python", "FastAPI", "PostgreSQL", "CI/CD", "Vercel", "Resend"],
-    description: "Building full stack applications and software systems tailored to real business needs, from understanding what needs to be built and designing the architecture to developing the frontend, backend, APIs, databases, authentication, integrations and responsive interfaces. The focus is on creating clean, reliable software that can grow with the product, whether it is a new application, a custom software system or an improvement to an existing product.",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Python", "FastAPI", "PostgreSQL", "Supabase", "CI/CD"],
+    description: "Building websites, applications and software systems around the needs of each business. From planning how something should work to designing the interface, developing the frontend and backend, setting up databases and connecting external services, I work across the different parts of a product to bring it to life. The goal is to build software that works well, is easy to maintain and can grow as the business develops.",
   },
   {
     name: "AI engineering & development",
