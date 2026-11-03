@@ -17,8 +17,8 @@ const services: Service[] = [
   
   {
     name: "Product development",
-    stack: ["Notion", "ChatGPT", "Claude"],
-    description: "Turning ideas and real world problems into clear, buildable software products, from defining the problem and shaping the product to planning the core features and technical direction. We work closely with founders and businesses to understand what they need, decide what should be built and create a practical path from the initial idea to a working product.",
+    stack: ["UI/UX", "Agile/Scrum", "Prototyping", "Product Strategy", "Product Roadmaping"],
+    description: "Helping turn an idea into something that can actually be built. This starts with understanding the problem, the people who will use the product and what they need. From there, I help define the features, work out priorities and plan how the product should take shape, keeping business goals and technical possibilities in mind.",
   },
   
   
