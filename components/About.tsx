@@ -12,16 +12,16 @@ export default function About() {
           <div>
             <h2 className="font-display text-2xl text-bone mb-6">What we are</h2>
             <p className="font-body text-base text-bone leading-relaxed max-w-2xl">
-              Olethryx AI Systems is the software engineering portfolio of Panagiotis Giouvanas (Panos), a Full-Stack AI Software Developer based in Dublin.
+              Olethryx AI Systems is the software engineering portfolio of Panagiotis Giouvanas (Panos), a Full-Stack AI Software & AI Engineer based in Dublin.
               <br />
               <br />
               I design, build, and deploy full-stack applications and AI-powered products, combining software engineering with product thinking to solve real-world problems.
               <br />
               <br />
-              I’m currently building an AI-powered agritech startup and have delivered a live website for a Dublin tour business. My work covers the full product lifecycle, from defining requirements and planning features to development and deployment.
+              I’m currently building an AI-powered Agritech startup and have delivered a live website for a Dublin tour business. My work covers the full product lifecycle, from understanding requirements and planning features to designing, developing and deploying software.
               <br />
               <br />
-              Whether you&apos;re looking to build a new product, improve an existing system, or collaborate on something ambitious, I&apos;m always open to a conversation. I&apos;d love to hear from founders and businesses with a project in mind, as well as developers, designers and other AI and software focused professionals interested in working together.
+              Whether you&apos;re looking to build a new product, improve an existing system, or collaborate on something ambitious, I&apos;m always open to a conversation. I&apos;d love to hear from individuals and businesses with a project in mind, as well as developers, designers and other AI and software focused professionals interested in working together.
             </p>
             <button 
             onClick={() => setShowContact(true)}
