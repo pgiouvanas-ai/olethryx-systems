@@ -1,3 +1,4 @@
+"use client";
 import ServiceCard from "@/components/ServiceCard";
 import type { Service } from "@/components/ServiceCard";
 
@@ -25,12 +26,15 @@ const services: Service[] = [
 ];
 
 export default function Services() {
+  const handleExploreService = (service: Service) => {
+  console.log("Explore service:", service.name);
+};
   return (
     <section id="services" className="bg-ink px-6 py-24">
       <h2 className="font-display text-2xl text-bone mb-12">Services</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {services.map((service) => (
-          <ServiceCard key={service.name} service={service} />
+          <ServiceCard key={service.name} service={service} onExploreService={() => handleExploreService(service)}/>
         ))}
       </div>
     </section>

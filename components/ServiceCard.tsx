@@ -5,8 +5,14 @@ export type Service = {
   description: string;
 };
 
+// card loads with project
+type ServiceCardProps = {
+  service: Service;
+  onExploreService: () => void;
+};
+
 // card rendering services
-export default function ServiceCard({ service }: { service: Service }) {
+export default function ServiceCard({ service, onExploreService }: ServiceCardProps) {
   return (
     <div className="border border-panel-line bg-panel p-6 flex flex-col h-full">
       {/* title */}
@@ -28,6 +34,10 @@ export default function ServiceCard({ service }: { service: Service }) {
 
       {/*  description */}
       <p className="text-sm text-bone mb-6">{service.description}</p>
+      {/* Button that opens modal */}
+      <button onClick={onExploreService} className="inline-flex items-center gap-2 px-4 py-2 border border-blue text-blue font-mono text-xs tracking-widest hover:bg-blue hover:text-ink transition-colors duration-200">
+        EXPLORE SERVICE →
+      </button>
     </div>
   );
 }
