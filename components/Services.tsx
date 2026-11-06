@@ -13,7 +13,7 @@ const services: Service[] = [
   {
     name: "AI engineering & development",
     stack: ["Python", "FastAPI", "LLMs", "RAG", "AI Agents"],
-    description: "Building AI powered software systems that bring intelligent capabilities into real applications, from integrating language models and developing RAG systems to creating AI agents and automated workflows. We start by identifying where AI can provide real value, then design and build the surrounding software, APIs and data flows needed to make it useful, reliable and scalable in practice.",
+    description: "Building software that uses AI to make everyday tasks easier and solve specific problems. This can include connecting language models to applications, working with business data, creating AI assistants and automating workflows. The focus is on finding practical uses for AI and making sure everything works as part of a complete software product.",
   },
   
   {
