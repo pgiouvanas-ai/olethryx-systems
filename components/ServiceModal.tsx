@@ -3,21 +3,17 @@
 import { useEffect } from "react";
 
 // Modal render
-type ProjectDetail = {
+type ServiceDetail = {
   name: string;
-  logo: string;
-  status: "LIVE" | "IN DEV";
-  problem: string;
-  solution: string;
-  build: string;
+  description: string;
 };
 
-type ProjectModalProps = {
-  project: ProjectDetail;
+type ServiceModalProps = {
+  service: ServiceDetail;
   onClose: () => void;
 };
 
-export default function ProjectModal({ project, onClose }: ProjectModalProps) {
+export default function ServiceModal({ service, onClose }: ServiceModalProps) {
   // Closes the modal with escape key and prevents page from scrolling.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -48,23 +44,13 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         </button>
 
         {/* Header */}
-        <div className="flex items-center gap-2.5 mb-6">
-          <img src={project.logo} alt={`${project.name} logo`} className="h-9 w-auto shrink-0" />
-          <span className="font-display text-xl text-bone">{project.name}</span>
+        <div className= "mb-6">
+          <span className="font-display text-xl text-bone">{service.name}</span>
         </div>
 
         {/* Problem */}
-        <h3 className="font-mono text-xs text-blue uppercase tracking-wider mb-2">Problem</h3>
-        <p className="text-sm text-bone mb-6">{project.problem}</p>
-
-        {/* Solution */}
-        <h3 className="font-mono text-xs text-blue uppercase tracking-wider mb-2">Solution</h3>
-        <p className="text-sm text-bone mb-6">{project.solution}</p>
-
-        {/* Build */}
-        <h3 className="font-mono text-xs text-blue uppercase tracking-wider mb-2">Build</h3>
-        <p className="text-sm text-bone mb-6">{project.build}</p>
-
+        <h3 className="font-mono text-xs text-blue uppercase tracking-wider mb-2">Description</h3>
+        <p className="text-sm text-bone mb-6">{service.description}</p>
         
       </div>
     </div>
