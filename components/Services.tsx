@@ -1,7 +1,8 @@
 "use client";
+import { useState } from "react";
 import ServiceCard from "@/components/ServiceCard";
 import type { Service } from "@/components/ServiceCard";
-
+import ServiceModal from "@/components/ServiceModal";
 
 // Services content
 const services: Service[] = [
@@ -26,8 +27,10 @@ const services: Service[] = [
 ];
 
 export default function Services() {
+  const [selectedService, setSelectedService] = useState<Service | null>(null);
+
   const handleExploreService = (service: Service) => {
-  console.log("Explore service:", service.name);
+  setSelectedService(service);
 };
   return (
     <section id="services" className="bg-ink px-6 py-24">
@@ -37,6 +40,12 @@ export default function Services() {
           <ServiceCard key={service.name} service={service} onExploreService={() => handleExploreService(service)}/>
         ))}
       </div>
+      {selectedService && (
+  <ServiceModal
+    service={selectedService}
+    onClose={() => setSelectedService(null)}
+  />
+)}
     </section>
   );
 }
