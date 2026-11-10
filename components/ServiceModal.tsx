@@ -44,11 +44,11 @@ export default function ServiceModal({ service, onClose }: ServiceModalProps) {
         </button>
 
         {/* Header */}
-        <div className= "mb-6">
+        <div className="mb-6">
           <span className="font-display text-xl text-bone">{service.name}</span>
         </div>
 
-        {/* Problem */}
+        {/* description */}
         <h3 className="font-mono text-xs text-blue uppercase tracking-wider mb-2">Description</h3>
         <p className="text-sm text-bone mb-6">{service.description}</p>
         
