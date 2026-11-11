@@ -37,7 +37,7 @@ const projects: ProjectDetail[] = [
   {
     name: "Olethryx AI Systems",
     logo: "/logo.png",
-    status: "IN DEV",
+    status: "LIVE",
     industry: ["Portfolio", "AI", "Engineering"],
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Resend"],
     description: "An AI-powered portfolio showcasing intelligent software solutions for real-world applications.",
