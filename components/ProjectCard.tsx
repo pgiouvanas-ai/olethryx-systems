@@ -19,7 +19,7 @@ export default function ProjectCard({ project, onViewDetails }: ProjectCardProps
   const isLive = project.status === "LIVE";
 
   return (
-    <div className="border border-panel-line bg-panel p-6">
+    <div className="border border-panel-line bg-panel p-6 flex flex-col h-full">
       {/* logo, name, status badge */}
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2.5">
