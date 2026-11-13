@@ -63,7 +63,7 @@ export default function ProjectCard({ project, onViewDetails }: ProjectCardProps
       <p className="text-sm text-bone mb-6">{project.description}</p>
 
       {/* Button that opens modal */}
-      <button onClick={onViewDetails} className="inline-flex items-center gap-2 px-4 py-2 border border-blue text-blue font-mono text-xs tracking-widest hover:bg-blue hover:text-ink transition-colors duration-200">
+      <button onClick={onViewDetails} className="mt-auto inline-flex items-center gap-2 px-4 py-2 border border-blue text-blue font-mono text-xs tracking-widest hover:bg-blue hover:text-ink transition-colors duration-200">
         VIEW DETAILS →
       </button>
     </div>
