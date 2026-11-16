@@ -2,7 +2,12 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <main className="min-h-screen bg-ink flex flex-col items-center justify-center px-6 text-center">
+    <main className="relative min-h-screen bg-ink flex flex-col items-center justify-center px-6 text-center overflow-hidden">
+      <img
+       src="/olethryx_404.gif"
+       alt=""
+       className="absolute inset-0 w-full h-full object-cover"
+      />
       <h1>404</h1>
       <h2>Page not found</h2>
       <p>The page you're looking for doesn't exist.</p>
