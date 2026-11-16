@@ -8,14 +8,14 @@ export default function NotFound() {
        alt=""
        className="absolute inset-0 w-full h-full object-cover"
       />
-      <h1>404</h1>
-      <h2>Page not found</h2>
-      <p>The page you're looking for doesn't exist.</p>
+      <h1 className="relative z-10">404</h1>
+      <h2 className="relative z-10">Page not found</h2>
+      <p className="relative z-10">LOST IN OLETHROS</p>
       <Link
         href="/"
-        className="mt-6 inline-flex items-center gap-2 px-6 py-3 border border-blue text-blue font-mono text-xs tracking-widest hover:bg-blue hover:text-ink transition-colors duration-200"
+        className=" relative z-10 mt-6 inline-flex items-center gap-2 px-6 py-3 border border-blue text-blue font-mono text-xs tracking-widest hover:bg-blue hover:text-ink transition-colors duration-200"
       >
-        BACK TO HOME →
+        GO BACK TO OLETHRYX →
       </Link>
     </main>
   );
