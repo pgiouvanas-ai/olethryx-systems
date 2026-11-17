@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <main className="relative min-h-screen bg-ink flex flex-col items-start justify-start px-6 text-left pt-20 pl-16 overflow-hidden">
+    <main className="relative min-h-screen bg-ink flex flex-col items-start justify-start px-6 text-center pt-20 pl-16 overflow-hidden">
       <img
        src="/olethryx_404.gif"
        alt=""
