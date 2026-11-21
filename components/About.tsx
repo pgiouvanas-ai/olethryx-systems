@@ -12,7 +12,7 @@ export default function About() {
           <div>
             <h2 className="font-display text-2xl text-bone mb-6">What we are</h2>
             <p className="font-body text-base text-bone leading-relaxed max-w-2xl">
-              Olethryx AI Systems is the software engineering portfolio of Panagiotis Giouvanas (Panos), a Full-Stack AI Software & AI Engineer based in Dublin.
+              Olethryx AI Systems is the software engineering portfolio of Panagiotis Giouvanas (Panos), a Software & AI Engineer and Full-Stack Developer sbased in Dublin.
               <br />
               <br />
               I design, build, and deploy full-stack applications and AI-powered products, combining software engineering with product thinking to solve real-world problems.
