@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Orbitron, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import CookieConsent from "@/components/CookieConsent";
+import AiChat from "@/components/AiChat";
 
 // The three fonts that are used across the site.
 const orbitron = Orbitron({
@@ -38,6 +39,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col bg-ink text-bone">
         {children}
+        <AiChat />
         <CookieConsent />
         </body>
     </html>
