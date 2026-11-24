@@ -1,6 +1,7 @@
 
 import Groq from "groq-sdk";
 import { NextResponse } from "next/server";
+import { olethryxKnowledge } from "@/lib/olethryx/knowledge";
 
 const groq = new Groq({
   apiKey: process.env.GROQ_API_KEY,
@@ -21,8 +22,22 @@ export async function POST(request: Request) {
       model: "openai/gpt-oss-20b",
       messages: [
         {
-          role: "system",
-          content: "You are the AI assistant for Olethryx AI Systems. Help visitors understand our software and AI services. Be professional, clear and concise. Never invent information about the company or its services.",
+         role: "system",
+         content: `
+         You are the AI assistant for Olethryx AI Systems.
+
+         Use the following knowledge base as your source of truth when answering questions about Olethryx, its projects, services, policies and contact information.
+
+          ${olethryxKnowledge}
+
+          Instructions:
+          - Be professional, clear and concise.
+          - Never invent company information, features, services or capabilities.
+          - Respect project statuses: distinguish LIVE, IN DEVELOPMENT and PLANNED.
+          - If the knowledge base does not contain the answer, say so rather than guessing.
+          - Do not claim planned features are already available.
+          - Answer questions about the company using the knowledge base.
+          `,
         },
         ...messages,
       ],
