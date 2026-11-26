@@ -10,6 +10,10 @@ type ProjectDetail = {
   problem: string;
   solution: string;
   build: string;
+  roadmap: {
+    title: string;
+    status: "COMPLETE" | "IN PROGRESS" | "PLANNED";
+  }[];
 };
 
 type ProjectModalProps = {
@@ -64,7 +68,23 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         {/* Build */}
         <h3 className="font-mono text-xs text-blue uppercase tracking-wider mb-2">Build</h3>
         <p className="text-sm text-bone mb-6">{project.build}</p>
+        
+        {/* Development Roadmap */}
+<h3 className="font-mono text-xs text-blue uppercase tracking-wider mb-4">
+  Development Roadmap
+</h3>
 
+<div className="space-y-4 mb-6">
+  {project.roadmap.map((item, index) => (
+    <div key={index} className="flex items-start gap-3">
+      <div className="h-2 w-2 rounded-full bg-blue mt-1.5 shrink-0" />
+      <div>
+        <p className="text-sm text-bone">{item.title}</p>
+        <p className="font-mono text-xs text-blue mt-1">{item.status}</p>
+      </div>
+    </div>
+  ))}
+</div>
         
       </div>
     </div>
