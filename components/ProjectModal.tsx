@@ -56,7 +56,27 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           <img src={project.logo} alt={`${project.name} logo`} className="h-9 w-auto shrink-0" />
           <span className="font-display text-xl text-bone">{project.name}</span>
         </div>
+        {/* Project Status */}
+<div className="flex items-center justify-between border border-panel-line p-4 mb-8">
+  <div>
+    <p className="font-mono text-xs text-blue uppercase tracking-wider mb-1">
+      Project Status
+    </p>
+    <p className="text-sm text-bone">
+      {project.status === "LIVE" ? "Live & Operational" : "In Development"}
+    </p>
+  </div>
 
+  <span
+    className={`font-mono text-xs px-3 py-1 border ${
+      project.status === "LIVE"
+        ? "border-green-500/40 text-green-400"
+        : "border-blue/40 text-blue"
+    }`}
+  >
+    {project.status}
+  </span>
+</div>
         {/* Problem */}
         <h3 className="font-mono text-xs text-blue uppercase tracking-wider mb-2">Problem</h3>
         <p className="text-sm text-bone mb-6">{project.problem}</p>
